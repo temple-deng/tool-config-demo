@@ -1,0 +1,87 @@
+{
+  "sessionEngine": {
+    "type": "Memcached",
+    "remotes": [
+      "127.0.0.1:11211"
+    ],
+    "secret": "keyboard cat",
+    "cookie_name": "ustack"
+  },
+  "log": {
+    "accessLogPath": "/var/log/halo/access.log",
+    "errorLogPath": "/var/log/halo/error.log",
+    "debug": false,
+    "format": "combined",
+    "printAccessLog": true
+  },
+  "websocket": {
+    "RegionOne": ":5679"
+  },
+  "port": 5678,
+  "hostname": "",
+  "reg_token_expire": 86400,
+  "reg_sms_expire": 600,
+  "phone_area_code": "86",
+  "ticket_flow": [
+    "member",
+    "owner",
+    "admin"
+  ],
+  "ticket_attachment_path": "/opt/attachment/nfs",
+  "ticket_attachment_size_limit": 10485760,
+  "approval_flow": [
+    "Member",
+    "owner",
+    "admin"
+  ],
+  "region": [
+    {
+      "name": {
+        "en": "RegionOne",
+        "zh-CN": "一区"
+      },
+      "id": "RegionOne"
+    }
+  ],
+  "domain": "Default",
+  "cookie": {
+    "maxAge": 604800000
+  },
+  "admin_username": "admin",
+  "admin_password": "Ustack2016",
+  "admin_projectId": "41bfd9d9031346de9ba1e59ead012a23",
+  "neutron_network_vlanranges": "datacentre:1:1000,datacentre2:1001:2000",
+  "currency": {
+    "ISO4217": "CNY",
+    "name": "人民币",
+    "unit": "元"
+  },
+  "paypal": {
+    "mode": "live",
+    "client_id": "",
+    "client_secret": ""
+  },
+  "alipay": {
+    "service": "create_direct_pay_by_user",
+    "partner": "",
+    "partnerKey": "",
+    "seller_id": "",
+    "seller_account_name": "",
+    "seller_email": "",
+    "subject": "账户充值/Recharge:",
+    "body": "金额/Amount:",
+    "_input_charset": "utf-8",
+    "payment_type": "1",
+    "gateway": "https://mapi.alipay.com/gateway.do?"
+  },
+  "assets_dir": "/opt/assets",
+  "keystone": "http://10.0.146.45:5000",
+  "no_services": [],
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "1234",
+    "database": "kunkka"
+  }
+}
